@@ -35,6 +35,7 @@
   </header>
   <div class="tabs">
     <div class="tab active" data-tab="brief">Brief</div>
+    <div class="tab" data-tab="ceo">Talk to CEO</div>
     <div class="tab" data-tab="assets">Assets</div>
     <div class="tab" data-tab="plan">Plan</div>
   </div>
@@ -55,6 +56,8 @@ function render(tab) {
   c.innerHTML = '';
   if (tab === 'brief') {
     c.innerHTML = '<p class="section-note">Tyrant CEO daily 7am Perth brief lands here. Goal: $50k/month in 6 months or less with organic free marketing. Nothing launches without your yes.</p><div class="card"><h3>Status</h3><div class="meta">Tyrant CEO is running. First agents created. Plan and 7-day actions incoming. AWT clients are banned.</div></div>';
+  } else if (tab === 'ceo') {
+    c.innerHTML = '<p class="section-note">Talk directly to the Tyrant CEO. It runs Marketing Cartel. Nothing launches without your yes.</p><div class="card"><h3>Talk to Tyrant CEO</h3><div class="meta">Open the Marketing Cartel Tyrant CEO chat in Grok and message it anytime. It will reply with the plan, actions, and approvals needed.</div><a class="link" href="https://grok.com" target="_blank">Open Grok to talk to CEO →</a></div>';
   } else if (tab === 'assets') {
     c.innerHTML = '<p class="section-note">Existing assets. Tyrant CEO has been instructed to review and use these.</p>';
     assets.forEach(a => {
